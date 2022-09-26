@@ -1,0 +1,90 @@
+<mxfile host="65bd71144e">
+    <diagram id="NSGkX7xL18oKs2oRAseX" name="Page-1">
+        <mxGraphModel dx="1267" dy="957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="14" value="MapMarkerSimple" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;strokeColor=#000000;labelBackgroundColor=none;fillColor=#f5f5f5;fontColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="440" width="230" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="+ defaultMakrerSize: double&lt;br&gt;+ defaultColor: Color" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="14">
+                    <mxGeometry y="55" width="230" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="line;strokeWidth=2;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;labelBackgroundColor=none;fontColor=#333333;" vertex="1" parent="14">
+                    <mxGeometry y="140" width="230" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="+ MapMarkerSimple(Layer, Coordinate)" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="14">
+                    <mxGeometry y="148" width="230" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="ContentPanel" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;strokeColor=#000000;labelBackgroundColor=none;fillColor=#f5f5f5;fontColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="60" width="340" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;div&gt;- topLevelSplitPane: JSplitPane&lt;/div&gt;&lt;div&gt;- querySplitPane: JSplitPane&lt;/div&gt;&lt;div&gt;- newQueryPanel: JPanel&lt;/div&gt;&lt;div&gt;- existingQueryList: JPanel&lt;/div&gt;&lt;div&gt;- map: JMapViewer&lt;/div&gt;&lt;div&gt;- app: Application&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="22">
+                    <mxGeometry y="55" width="340" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="line;strokeWidth=2;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;labelBackgroundColor=none;fontColor=#333333;" vertex="1" parent="22">
+                    <mxGeometry y="160" width="340" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="+ ContentPanel(Application)&lt;br&gt;+ addQuery(Query): void&lt;br&gt;+actionPerformed(ActionEvent e): void&lt;br&gt;+ getViewer(): JMapViewer" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="22">
+                    <mxGeometry y="168" width="340" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;entryX=0.197;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;labelBackgroundColor=none;fillColor=#f5f5f5;strokeWidth=2;" edge="1" parent="1" source="30" target="45">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="175" y="400"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="NewQueryPanel" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;strokeColor=#000000;labelBackgroundColor=none;fillColor=#f5f5f5;fontColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="480" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="- newQuery: JTextField&lt;br&gt;- queryLabel: JLabel&lt;br&gt;- colorSetter: JPanel&lt;br&gt;- app: Application&lt;br&gt;- random: Random" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="30">
+                    <mxGeometry y="55" width="190" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="line;strokeWidth=2;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;labelBackgroundColor=none;fontColor=#333333;" vertex="1" parent="30">
+                    <mxGeometry y="180" width="190" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="+ NewQueryPanel(Application)&lt;br&gt;- addQuery(String): void&lt;br&gt;+ getRandomColor(): Color" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="30">
+                    <mxGeometry y="188" width="190" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Application" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;strokeColor=#000000;fontColor=#333333;labelBackgroundColor=none;fillColor=#f5f5f5;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="10" width="430" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="- contentPanel: ContentPanel&lt;br&gt;- bing: BingAerialTileSource&lt;br&gt;- queries: ArrayList&amp;lt;Query&amp;gt;&lt;br&gt;- twitterSource: TwitterSource" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="38">
+                    <mxGeometry y="55" width="430" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="line;strokeWidth=2;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;labelBackgroundColor=none;fontColor=#333333;" vertex="1" parent="38">
+                    <mxGeometry y="150" width="430" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="- initialize(): void&lt;br&gt;+ addQuery(Query): void&lt;br&gt;- getQueryTerms(): HashSet&amp;lt;String&amp;gt;&lt;br&gt;+ Application()&lt;br&gt;- pixelWidth(Point): double&lt;br&gt;- getVisibleLayers(): HashSet&amp;lt;Layer&amp;gt;&lt;br&gt;- getMarkersCovering(ICoordinate, double): ArrayList&amp;lt;MapMarker&amp;gt;&lt;br&gt;+ Map(): JMapViewer&lt;br&gt;+ Main(): void&lt;br&gt;+ updateVisibility(): void&lt;br&gt;+ terminateQuery(Query): void" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="38">
+                    <mxGeometry y="158" width="430" height="202" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;startArrow=none;strokeColor=#000000;labelBackgroundColor=none;fillColor=#f5f5f5;strokeWidth=2;" edge="1" parent="1" source="61" target="45">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="rhombus;labelBackgroundColor=none;fontSize=12;strokeColor=#000000;fillColor=#f5f5f5;fontColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="450" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="rhombus;labelBackgroundColor=none;fontSize=12;strokeColor=#000000;fillColor=#f5f5f5;fontColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="254" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;endArrow=none;strokeColor=#000000;labelBackgroundColor=none;fillColor=#f5f5f5;strokeWidth=2;" edge="1" parent="1" source="29" target="61">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="620" y="269" as="sourcePoint"/>
+                        <mxPoint x="520" y="269" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="64" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="370" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="249" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="45" target="61">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
