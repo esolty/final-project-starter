@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e">
+<mxfile host="65bd71144e" scale="1" border="10">
     <diagram id="NSGkX7xL18oKs2oRAseX" name="Page-1">
         <mxGraphModel dx="1267" dy="957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
             <root>
@@ -25,7 +25,7 @@
                 <mxCell id="27" value="" style="line;strokeWidth=2;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;labelBackgroundColor=none;fontColor=#333333;" vertex="1" parent="22">
                     <mxGeometry y="160" width="340" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="+ ContentPanel(Application)&lt;br&gt;+ addQuery(Query): void&lt;br&gt;+actionPerformed(ActionEvent e): void&lt;br&gt;+ getViewer(): JMapViewer" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="22">
+                <mxCell id="29" value="+ ContentPanel(Application)&lt;br&gt;+ addQuery(Query): void&lt;br&gt;+ getViewer(): JMapViewer" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontColor=#333333;strokeWidth=2;" vertex="1" parent="22">
                     <mxGeometry y="168" width="340" height="82" as="geometry"/>
                 </mxCell>
                 <mxCell id="46" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;entryX=0.197;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;labelBackgroundColor=none;fillColor=#f5f5f5;strokeWidth=2;" edge="1" parent="1" source="30" target="45">

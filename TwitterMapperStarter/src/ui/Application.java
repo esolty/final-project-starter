@@ -15,9 +15,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.*;
 import java.util.List;
 import java.util.Timer;
+import java.util.*;
 
 /**
  * The Twitter viewer application
@@ -35,7 +35,7 @@ public class Application extends JFrame {
 
     private void initialize() {
         // To use the live twitter stream, use the following line
-        // twitterSource = new LiveTwitterSource();
+//        twitterSource = new LiveTwitterSource();
 
         // To use the recorded twitter stream, use the following line
         // The number passed to the constructor is a speedup value:
@@ -55,7 +55,7 @@ public class Application extends JFrame {
         Set<String> allterms = getQueryTerms();
         twitterSource.setFilterTerms(allterms);
         contentPanel.addQuery(query);
-        // TODO: This is the place where you should connect the new query to the twitter source
+        twitterSource.addObserver(query);
     }
 
     /**
@@ -121,8 +121,26 @@ public class Application extends JFrame {
             public void mouseMoved(MouseEvent e) {
                 Point p = e.getPoint();
                 ICoordinate pos = map().getPosition(p);
-                // TODO: Use the following method to set the text that appears at the mouse cursor
-                map().setToolTipText("This is a tooltip");
+                List<MapMarker> markersFound = getMarkersCovering(pos, pixelWidth(p));
+
+                if (!markersFound.isEmpty()) {
+                    for(MapMarker marker: markersFound)
+                    {
+                        PrettyMarker prettymarker = (PrettyMarker) marker;
+                        if(prettymarker.getImage() != null) {
+                            map().setToolTipText("<html><img src=" + prettymarker.getImageURL() +
+                                    " height='80' width='80' /><p><b>" + prettymarker.getUser().getName() +
+                                    "</b></p><p>" + prettymarker.getText() + "</p></html>");
+                        }
+                        else {
+                            map().setToolTipText("<html><p><b>" + prettymarker.getUser().getName() +
+                                    "</b></p><p>" + prettymarker.getText() + "</p></html>");
+                        }
+
+
+
+                    }
+                }
             }
         });
     }
@@ -188,7 +206,8 @@ public class Application extends JFrame {
 
     // A query has been deleted, remove all traces of it
     public void terminateQuery(Query query) {
-        // TODO: This is the place where you should disconnect the expiring query from the twitter source
+        query.terminate();
+        twitterSource.deleteObserver(query);
         queries.remove(query);
         Set<String> allterms = getQueryTerms();
         twitterSource.setFilterTerms(allterms);

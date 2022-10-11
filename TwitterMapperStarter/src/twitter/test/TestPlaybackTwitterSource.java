@@ -20,7 +20,9 @@ public class TestPlaybackTwitterSource {
     public void testSetup() {
         PlaybackTwitterSource source = new PlaybackTwitterSource(1.0);
         TestObserver to = new TestObserver();
-        // TODO: Once your TwitterSource class implements Observable, you must add the TestObserver as an observer to it here
+        TestObserver to2 = new TestObserver();
+        source.addObserver(to); // added here
+        source.addObserver(to2); // extra test
         source.setFilterTerms(set("food"));
         pause(3 * 1000);
         assertTrue(to.getNTweets() > 0, "Expected getNTweets() to be > 0, was " + to.getNTweets());
@@ -30,7 +32,8 @@ public class TestPlaybackTwitterSource {
         source.setFilterTerms(set("food", "the"));
         pause(3 * 1000);
         assertTrue(to.getNTweets() > 0, "Expected getNTweets() to be > 0, was " + to.getNTweets());
-        assertTrue(to.getNTweets() > firstBunch, "Expected getNTweets() to be < firstBunch (" + firstBunch + "), was " + to.getNTweets());
+        assertTrue(to.getNTweets() > firstBunch, "Expected getNTweets() to be < firstBunch ("
+                + firstBunch + "), was " + to.getNTweets());
         assertTrue(to.getNTweets() <= 10, "Expected getNTweets() to be <= 10, was " + to.getNTweets());
     }
 
